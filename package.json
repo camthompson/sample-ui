@@ -38,6 +38,16 @@
     "ember-export-application-global": "^1.0.5",
     "ember-load-initializers": "^0.5.1",
     "ember-resolver": "^2.0.3",
-    "loader.js": "^4.0.10"
+    "loader.js": "^4.0.10",
+    "ember-cli-deploy": "1.0.0-beta.1",
+    "ember-cli-deploy-build": "0.1.1",
+    "ember-cli-deploy-display-revisions": "0.2.2",
+    "ember-cli-deploy-gzip": "0.2.3",
+    "ember-cli-deploy-manifest": "0.1.1",
+    "ember-cli-deploy-revision-data": "0.3.2",
+    "ember-cli-deploy-s3": "0.4.0",
+    "ember-cli-deploy-s3-index": "0.5.0",
+    "ember-cli-dotenv": "1.2.0",
+    "ember-git-version": "0.1.1"
   }
 }
