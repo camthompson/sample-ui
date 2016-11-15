@@ -1,10 +1,32 @@
 /*jshint node:true*/
 /* global require, module */
 var EmberApp = require('ember-cli/lib/broccoli/ember-app');
+var env = EmberApp.env();
+var isProductionLikeBuild = ['production', 'staging'].indexOf(env) > -1;
+var prependURL;
+if (env === 'production') {
+  prependURL = '//d14f0vilopav7r.cloudfront.net/'
+} else if (env === 'staging') {
+  prependURL = '//d9bro5nx6xntq.cloudfront.net/'
+}
 
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
-    // Add options here
+    fingerprint: {
+      prepend: prependURL,
+      enabled: isProductionLikeBuild
+    },
+
+    minifyAssets: { enabled: isProductionLikeBuild  },
+
+    minifyJS: { enabled: isProductionLikeBuild  },
+
+    dotEnv: {
+      clientAllowedKeys: [
+        'BUGSNAG_API_KEY',
+        'BUGSNAG_NOTIFY_RELEASE'
+      ]
+    }
   });
 
   // Use `app.import` to add additional libraries to the generated
