@@ -1,0 +1,7 @@
+#!/bin/bash
+if [[ -z "$@" ]]; then
+  echo 'Provide an environment'
+else
+  environment=$1
+  ember deploy:list $environment | awk 'NR==3 { print $NF; exit}'
+fi
