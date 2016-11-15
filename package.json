@@ -48,6 +48,7 @@
     "ember-cli-deploy-s3": "0.4.0",
     "ember-cli-deploy-s3-index": "0.5.0",
     "ember-cli-dotenv": "1.2.0",
-    "ember-git-version": "0.1.1"
+    "ember-git-version": "0.1.1",
+    "ember-route-action-helper": "2.0.0"
   }
 }

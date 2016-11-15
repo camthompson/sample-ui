@@ -1908,6 +1908,12 @@ ember-export-application-global@^1.0.5:
   dependencies:
     ember-cli-babel "^5.1.10"
 
+ember-getowner-polyfill@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/ember-getowner-polyfill/-/ember-getowner-polyfill-1.0.1.tgz#f60a31d25d642461dac4b4746184afaf7f5084ae"
+  dependencies:
+    ember-cli-babel "^5.1.5"
+
 ember-git-version@0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/ember-git-version/-/ember-git-version-0.1.1.tgz#816a572d103337faed4dbbafc29a1ccc361d0c4b"
@@ -1936,6 +1942,13 @@ ember-resolver@^2.0.3:
   dependencies:
     ember-cli-babel "^5.1.3"
     ember-cli-version-checker "^1.1.4"
+
+ember-route-action-helper@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/ember-route-action-helper/-/ember-route-action-helper-2.0.0.tgz#8dc8054d2ac9400e2282f7fdb0bbcce03989822a"
+  dependencies:
+    ember-cli-babel "^5.1.6"
+    ember-getowner-polyfill "^1.0.0"
 
 ember-router-generator@^1.0.0:
   version "1.2.2"
