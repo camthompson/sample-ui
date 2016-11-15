@@ -23,8 +23,7 @@ module.exports = function(defaults) {
 
     dotEnv: {
       clientAllowedKeys: [
-        'BUGSNAG_API_KEY',
-        'BUGSNAG_NOTIFY_RELEASE'
+        'BUGSNAG_API_KEY'
       ]
     }
   });
