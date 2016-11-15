@@ -20,9 +20,7 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
-    },
-
-    bugsnagKey: process.env.BUGSNAG_API_KEY,
+    }
   };
 
   if (environment === 'development') {
