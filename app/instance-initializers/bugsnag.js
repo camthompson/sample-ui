@@ -1,6 +1,5 @@
 import Ember from 'ember';
 import config from '../config/environment';
-import doNotifyError from '../utils/do-notify-error';
 
 export function initialize(instance) {
   let notifyBugsnag = function() {};
@@ -25,10 +24,8 @@ export function initialize(instance) {
   }
 
   Ember.onerror = function(error) {
-    if (doNotifyError(error)) {
-      notifyBugsnag(error);
-      sendErrorToConsole(error);
-    }
+    notifyBugsnag(error);
+    sendErrorToConsole(error);
   };
 }
 
