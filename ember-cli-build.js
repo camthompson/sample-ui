@@ -21,6 +21,8 @@ module.exports = function(defaults) {
 
     minifyJS: { enabled: isProductionLikeBuild  },
 
+    sourcemaps: { enabled: true },
+
     dotEnv: {
       clientAllowedKeys: [
         'BUGSNAG_API_KEY'
