@@ -5,7 +5,7 @@ const {
 } = Ember;
 
 export default Route.extend({
-  redirect() {
+  model() {
     this.transitionTo('bar');
   }
 });
