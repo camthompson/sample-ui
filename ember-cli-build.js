@@ -21,7 +21,7 @@ module.exports = function(defaults) {
 
     minifyJS: { enabled: isProductionLikeBuild  },
 
-    sourcemaps: { enabled: false },
+    sourcemaps: { enabled: true },
 
     dotEnv: {
       clientAllowedKeys: [
